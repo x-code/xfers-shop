@@ -1,0 +1,85 @@
+<header>
+      <div class="navbar">
+        <div class="container d-flex justify-content-between">
+          <div class="left"> My Shop</div>
+          <div class="right"> Balance : <%=@available_bal%></div>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <div class="album">
+        <div class="container">
+
+          <div class="row">
+              <div class="col-md-12 text-center">
+                <p>You can top up your wallet by transferring to the following bank:</p>
+                <h4> Bank Name: <%=@bank_name%></h4>
+                <h4> Account Number: <%=@account_no%></h4>
+                <h4> Unique ID: <%=@unique_id%></h4>
+              </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <%= image_tag("https://cnet2.cbsistatic.com/img/rvIz1qsTJOUomXxVIX8gv-5FjLw=/770x433/2017/06/27/13484418-bfd9-41e2-8f2d-9b4afb072da8/apple-macbook-pro-15-inch-2017-14.jpg",  alt: "macbook", class: "card-img-top") %>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque sodales arcu eu accumsan. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Rp. 12.970.000.000</small>
+                    <div class="btn-group">
+                      <form action="/charge" method="post">
+                        <input type="hidden" name="price" value="">
+                        <input type="hidden" name="qty" value="">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary">Buy</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <%= image_tag("https://cnet2.cbsistatic.com/img/rvIz1qsTJOUomXxVIX8gv-5FjLw=/770x433/2017/06/27/13484418-bfd9-41e2-8f2d-9b4afb072da8/apple-macbook-pro-15-inch-2017-14.jpg",  alt: "macbook", class: "card-img-top") %>
+
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque sodales arcu eu accumsan. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Rp. 11.970.000.000</small>
+                    <div class="btn-group">
+                      <form action="/charge" method="post">
+                        <input type="hidden" name="price" value="">
+                        <input type="hidden" name="qty" value="">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary">Buy</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <%= image_tag("https://cnet2.cbsistatic.com/img/rvIz1qsTJOUomXxVIX8gv-5FjLw=/770x433/2017/06/27/13484418-bfd9-41e2-8f2d-9b4afb072da8/apple-macbook-pro-15-inch-2017-14.jpg",  alt: "macbook", class: "card-img-top") %>
+
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque sodales arcu eu accumsan. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+
+                    <small class="text-muted">Rp. 9.070.000.000</small>
+                    <div class="btn-group">
+                      <form action="/charge" method="post">
+                        <input type="hidden" name="price" value="">
+                        <input type="hidden" name="qty" value="">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary">Buy</button>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </main>
